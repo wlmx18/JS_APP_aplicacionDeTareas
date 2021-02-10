@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task App</title>
+    <!-- BOOSTRAP -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Task App</a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form  id="formTask">
+                            <div class="form-group">
+                                <input type="text" id="title" placeholder="Add A To Do" class="form-control">
+                            </div>
+                            <div class="form-group mt-2">
+                                <textarea id="description" cols="30" rows="10" placeholder="Add a Description" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                SAVE
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div id="tasks">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="app.js"></script>
+</body>
+</html>
+
